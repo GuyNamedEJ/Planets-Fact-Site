@@ -1,0 +1,267 @@
+const fetch = require('node-fetch')
+const data = require('../data.json')
+
+
+const mercuryData = data[0]
+const venusData = data[1]
+const earthData = data[2]
+const marsData = data[3]
+const jupiterdata = data[4]
+const saturnData = data[5]
+const uranusData = data[6]
+const neptuneData = data[7]
+
+
+// When this is called, it will render the index page
+const mercuryView = (req,res) => { 
+    const planet = mercuryData.name
+    const overview = mercuryData.overview.content
+    const structure = mercuryData.structure.content
+    const geology = mercuryData.geology.content
+    const rotation = mercuryData.rotation
+    const revolution = mercuryData.revolution
+    const radius = mercuryData.radius
+    const temperature = mercuryData.temperature
+    const planetImg = mercuryData.images.planet
+    const internalImg = mercuryData.images.internal
+    const geologyImg = mercuryData.images.geology
+
+    const source = mercuryData.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const venusView = (req,res) => { 
+    const planet = venusData.name
+    const overview = venusData.overview.content
+    const structure = venusData.structure.content
+    const geology = venusData.geology.content
+    const rotation = venusData.rotation
+    const revolution = venusData.revolution
+    const radius = venusData.radius
+    const temperature = venusData.temperature
+    const planetImg = venusData.images.planet
+    const internalImg = venusData.images.internal
+    const geologyImg = venusData.images.geology
+    const source = venusData.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const earthView = (req,res) => { 
+    const planet = earthData.name
+    const overview = earthData.overview.content
+    const structure = earthData.structure.content
+    const geology = earthData.geology.content
+    const rotation = earthData.rotation
+    const revolution = earthData.revolution
+    const radius = earthData.radius
+    const temperature = earthData.temperature
+    const planetImg = earthData.images.planet
+    const internalImg = earthData.images.internal
+    const geologyImg = earthData.images.geology
+    const source = earthData.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const marsView = (req,res) => { 
+    const planet = marsData.name
+    const overview = marsData.overview.content
+    const structure = marsData.structure.content
+    const geology = marsData.geology.content
+    const rotation = marsData.rotation
+    const revolution = marsData.revolution
+    const radius = marsData.radius
+    const temperature = marsData.temperature
+    const planetImg = marsData.images.planet
+    const internalImg = marsData.images.internal
+    const geologyImg = marsData.images.geology
+    const source = marsData.overview.source
+    
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const jupiterView = (req,res) => { 
+    const planet = jupiterdata.name
+    const overview = jupiterdata.overview.content
+    const structure = jupiterdata.structure.content
+    const geology = jupiterdata.geology.content
+    const rotation = jupiterdata.rotation
+    const revolution = jupiterdata.revolution
+    const radius = jupiterdata.radius
+    const temperature = jupiterdata.temperature
+    const planetImg = jupiterdata.images.planet
+    const internalImg = jupiterdata.images.internal
+    const geologyImg = jupiterdata.images.geology
+    const source = jupiterdata.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const saturnView = (req,res) => { 
+    const planet = saturnData.name
+    const overview = saturnData.overview.content
+    const structure = saturnData.structure.content
+    const geology = saturnData.geology.content
+    const rotation = saturnData.rotation
+    const revolution = saturnData.revolution
+    const radius = saturnData.radius
+    const temperature = saturnData.temperature
+    const planetImg = saturnData.images.planet
+    const internalImg = saturnData.images.internal
+    const geologyImg = saturnData.images.geology
+    const source = saturnData.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const uranusView = (req,res) => { 
+    const planet = uranusData.name
+    const overview = uranusData.overview.content
+    const structure = uranusData.structure.content
+    const geology = uranusData.geology.content
+    const rotation = uranusData.rotation
+    const revolution = uranusData.revolution
+    const radius = uranusData.radius
+    const temperature = uranusData.temperature
+    const planetImg = uranusData.images.planet
+    const internalImg = uranusData.images.internal
+    const geologyImg = uranusData.images.geology
+    const source = uranusData.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+const neptuneView = (req,res) => { 
+    const planet = neptuneData.name
+    const overview = neptuneData.overview.content
+    const structure = neptuneData.structure.content
+    const geology = neptuneData.geology.content
+    const rotation = neptuneData.rotation
+    const revolution = neptuneData.revolution
+    const radius = neptuneData.radius
+    const temperature = neptuneData.temperature
+    const planetImg = neptuneData.images.planet
+    const internalImg = neptuneData.images.internal
+    const geologyImg = neptuneData.images.geology
+    const source = neptuneData.overview.source
+
+    res.render('index.ejs', {
+        planet: planet,
+        overview: overview,
+        rotation: rotation,
+        revolution: revolution,
+        radius: radius, 
+        temperature: temperature,
+        structure: structure,
+        geology: geology,
+        planetImg: planetImg,
+        internalImg: internalImg,
+        geologyImg: geologyImg,
+        source: source
+    })
+}
+
+// Export Planet view
+module.exports = {
+    mercuryView,
+    venusView,
+    earthView,
+    marsView,
+    jupiterView,
+    saturnView,
+    uranusView,
+    neptuneView
+}

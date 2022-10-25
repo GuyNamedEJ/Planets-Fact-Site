@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <h2 class="navbar-brand">The Planets</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link" href="/mercury">Mercury</a>
+              <a class="nav-link" href="/venus">Venus</a>
+              <a class="nav-link" href="/earth">Earth</a>
+              <a class="nav-link" href="/mars">Mars</a>
+              <a class="nav-link" href="/jupiter">Jupiter</a>
+              <a class="nav-link" href="/saturn">Saturn</a>
+              <a class="nav-link" href="/uranus">Uranus</a>
+              <a class="nav-link" href="/neptune">Neptune</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="mobile-btn-holder ">
+         <div id="overview" class="mobile-btn active">
+           <h3>Overview</h3>
+         </div>
+
+         <div id="structure" class="mobile-btn">
+          <h3>Structure</h3>
+        </div>
+
+        <div id="surface" class="mobile-btn">
+          <h3>Surface</h3>
+        </div>
+      </section>
+
+      <section class="planet-info-container">
+        <div class="planet-img">
+          <img id="planet-display"  src="<%= planetImg %>" alt="Planet Image">
+          <img id="internal-display" class="img-fluid" src="<%= internalImg %>" alt="Planet Image">
+          <img id="geology-display" class="img-fluid" src="<%= geologyImg %>" alt="Planet Image">
+        </div>
+
+        <div class="planet-summary">
+          <h1 id="name"><%= planet %></h1>
+          <p id="overview-content"><%= overview %></p>
+          <p id="structure-content"class="hide"><%= structure %></p>
+          <p id="geology-content"class="hide"><%= geology  %></p>
+        </div>
+
+        <p id="overview-source">Source: <a class="source-link" href="<%= source %>">Wikipedia</a><span><img class="source-img" src="../assets/icon-source.svg" alt=""></span></p>
+      </section>
+
+      <section class="stat-container">
+        <div class="stat rotation">
+          <h4>Rotation time</h4>
+          <h2><%= rotation %></h2>
+        </div>
+        <div class="stat revolution">
+          <h4>Revolution time</h4>
+          <h2><%= revolution %></h2>
+        </div>
+        <div class="stat radius">
+          <h4>Radius</h4>
+          <h2><%= radius %></h2>
+        </div>
+        <div class="stat temp">
+          <h4>Average temp.</h4>
+          <h2><%= temperature%></h2>
+        </div>
+      </section>
+
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

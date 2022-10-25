@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
+
+h1,h2,h3,h4,p{
+    color:white;
+}
+
+h1{
+    font-family: 'Antonio', sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 103px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+body{
+    background-color: rgb(7,7,36);
+    background-image: url(../../assets/background-stars.svg);
+    
+}
+
+.navbar-brand{
+    font-size: 28px;
+    letter-spacing: -1.05px;
+    color:white;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 25px;
+    color:white;
+}
+
+.navbar{
+    background:none;
+    color:white;
+    border-bottom:1px solid #979797;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.mobile-btn-holder
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:50px;
+    border-bottom:1px solid #979797;
+}
+
+.mobile-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height:100%;
+    /* border-bottom:4px solid yellow; */
+    border-radius: 0;
+    font-size: 9px;
+    border:none;
+}
+
+.mobile-btn > h3{
+    margin-bottom: 0;
+}
+
+.btn h3{
+    margin:0;
+}
+
+.planet-info-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.planet-img{
+    margin: 98px 0;
+}
+.planet-summary{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0 24px;
+}
+
+.source-img{
+    margin-left: 4px;
+}
+
+.stat-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0 24px;
+}
+
+.stat{
+    border:1px solid #979797;
+    margin:8px;
+    width:327px;
+    height:48px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:9px 24px 13px 24px;
+}
+
+.stat h2, .stat h4{
+    margin:0;
+}
+
+.stat h2{
+    font-size: 20px;
+    letter-spacing: -0.75px;
+}
+
+.stat h4{
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: .73px;
+}
+
+.active
+{
+    border-bottom:4px solid;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display: block;
+}
+
+.planet-img{
+    position: relative;
+    
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#geology-display{
+    display: none;
+    width:163px;
+    height: 200px;
+    z-index:2;
+    position: absolute;
+    top:70%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+#planet-img{
+    /* width:100%; */
+}
+
+#internal-display{
+    display:none;
+}
+
