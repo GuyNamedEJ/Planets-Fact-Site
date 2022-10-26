@@ -34,89 +34,92 @@
     </div>
   </nav>
 
-  <section class="mobile-btn-holder ">
-    <div id="overview" class="mobile-btn active">
-      <h3>Overview</h3>
-    </div>
-
-    <div id="structure" class="mobile-btn">
-      <h3>Structure</h3>
-    </div>
-
-    <div id="surface" class="mobile-btn">
-      <h3>Surface</h3>
-    </div>
-  </section>
-
-  <section class="planet-info-container">
-    <div class="planet-img">
-      <img id="planet-display" class="img-fluid" src="<%= planetImg %>" alt="Planet Image">
-      <img id="internal-display" class="img-fluid" src="<%= internalImg %>" alt="Planet Image">
-      <img id="geology-display" class="img-fluid" src="<%= geologyImg %>" alt="Planet Image">
-    </div>
-
-    <div class="planet-summary">
-      <div class="info">
-        <h1 id="name">
-          <%= planet %>
-        </h1>
-        <p id="overview-content">
-          <%= overview %>
-        </p>
-        <p id="structure-content" class="hide">
-          <%= structure %>
-        </p>
-        <p id="geology-content" class="hide">
-          <%= geology %>
-        </p>
+ 
+    <section class="mobile-btn-holder ">
+      <div id="m-overview" class="info-btn  active">
+        <h3>Overview</h3>
+      </div>
   
-        <p id="overview-source">Source: <a class="source-link" href="<%= source %>">Wikipedia</a><span><img
-              class="source-img" src="../assets/icon-source.svg" alt=""></span></p>
+      <div id="m-structure" class="info-btn ">
+        <h3>Structure</h3>
       </div>
-      
-
-      <div class="btn-holder">
-        <div id="overview" class="info-btn active">
-          <h3 class="label"><span>01</span> Overview</h3>
+  
+      <div id="m-surface" class="info-btn ">
+        <h3>Surface</h3>
+      </div>
+    </section>
+    <main class="container">
+    <section class="planet-info-container">
+      <div class="planet-img">
+        <img id="planet-display" class="img-fluid" src="<%= planetImg %>" alt="Planet Image">
+        <img id="internal-display" class="img-fluid" src="<%= internalImg %>" alt="Planet Image">
+        <img id="geology-display" class="img-fluid" src="<%= geologyImg %>" alt="Planet Image">
+      </div>
+  
+      <div class="planet-summary">
+        <div class="info">
+          <h1 id="name">
+            <%= planet %>
+          </h1>
+          <p id="overview-content">
+            <%= overview %>
+          </p>
+          <p id="structure-content" class="hide">
+            <%= structure %>
+          </p>
+          <p id="geology-content" class="hide">
+            <%= geology %>
+          </p>
+    
+          <p id="overview-source">Source: <a class="source-link" href="<%= source %>">Wikipedia</a><span><img
+                class="source-img" src="../assets/icon-source.svg" alt=""></span></p>
         </div>
-
-        <div id="structure" class="info-btn">
-          <h3 class="label"><span>02</span> Structure</h3>
-        </div>
-
-        <div id="surface" class="info-btn">
-          <h3 class="label"><span>03</span> Surface</h3>
+        
+  
+        <div class="btn-holder">
+          <div id="overview" class="info-btn active">
+            <h3 class="label"><span>01</span> Overview</h3>
+          </div>
+  
+          <div id="structure" class="info-btn">
+            <h3 class="label"><span>02</span> Structure</h3>
+          </div>
+  
+          <div id="surface" class="info-btn">
+            <h3 class="label"><span>03</span> Surface</h3>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="stat-container">
-    <div class="stat rotation">
-      <h4>Rotation time</h4>
-      <h2>
-        <%= rotation %>
-      </h2>
-    </div>
-    <div class="stat revolution">
-      <h4>Revolution time</h4>
-      <h2>
-        <%= revolution %>
-      </h2>
-    </div>
-    <div class="stat radius">
-      <h4>Radius</h4>
-      <h2>
-        <%= radius %>
-      </h2>
-    </div>
-    <div class="stat temp">
-      <h4>Average temp.</h4>
-      <h2>
-        <%= temperature%>
-      </h2>
-    </div>
-  </section>
+    </section>
+  
+    <section class="stat-container">
+      <div class="stat rotation">
+        <h4>Rotation time</h4>
+        <h2>
+          <%= rotation %>
+        </h2>
+      </div>
+      <div class="stat revolution">
+        <h4>Revolution time</h4>
+        <h2>
+          <%= revolution %>
+        </h2>
+      </div>
+      <div class="stat radius">
+        <h4>Radius</h4>
+        <h2>
+          <%= radius %>
+        </h2>
+      </div>
+      <div class="stat temp">
+        <h4>Average temp.</h4>
+        <h2>
+          <%= temperature%>
+        </h2>
+      </div>
+    </section>
+  </main>
+  
 
 
 

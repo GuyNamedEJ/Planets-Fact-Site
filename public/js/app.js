@@ -1,6 +1,11 @@
+const m_overviewBtn = document.getElementById('m-overview')
+const m_structureBtn = document.getElementById('m-structure')
+const m_surfaceBtn = document.getElementById('m-surface')
+
 const overviewBtn = document.getElementById('overview')
 const structureBtn = document.getElementById('structure')
 const surfaceBtn = document.getElementById('surface')
+
 const overviewContent = document.getElementById('overview-content')
 const structureContent = document.getElementById('structure-content')
 const surfaceContent = document.getElementById('geology-content')
@@ -15,6 +20,10 @@ overviewBtn.addEventListener("click", toggleOverview)
 structureBtn.addEventListener("click", toggleStructure)
 surfaceBtn.addEventListener("click", toggleSurface)
 
+m_overviewBtn.addEventListener("click", toggleOverview)
+m_structureBtn.addEventListener("click", toggleStructure)
+m_surfaceBtn.addEventListener("click", toggleSurface)
+
 
 
 function toggleOverview()
@@ -22,6 +31,11 @@ function toggleOverview()
     overviewBtn.classList.add('active')
     structureBtn.classList.remove('active')
     surfaceBtn.classList.remove('active')
+
+    m_overviewBtn.classList.add('active')
+    m_structureBtn.classList.remove('active')
+    m_surfaceBtn.classList.remove('active')
+    
     
     overviewContent.classList.add('show')
     structureContent.classList.add('hide')
@@ -42,6 +56,10 @@ function toggleStructure()
     surfaceBtn.classList.remove('active')
     structureBtn.classList.add('active')
 
+    m_overviewBtn.classList.remove('active')
+    m_surfaceBtn.classList.remove('active')
+    m_structureBtn.classList.add('active')
+
     overviewContent.classList.remove('show')
     overviewContent.classList.add('hide')
     structureContent.classList.remove('hide')
@@ -61,6 +79,11 @@ function toggleSurface()
     overviewBtn.classList.remove('active')
     surfaceBtn.classList.add('active')
     structureBtn.classList.remove('active')
+
+    m_overviewBtn.classList.remove('active')
+    m_surfaceBtn.classList.add('active')
+    m_structureBtn.classList.remove('active')
+
 
     overviewContent.classList.remove('show')
     overviewContent.classList.add('hide')

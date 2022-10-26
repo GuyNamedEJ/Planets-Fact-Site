@@ -86,7 +86,7 @@ body{
     border-bottom:1px solid #979797;
 }
 
-.mobile-btn{
+.info-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,6 +104,10 @@ body{
 
 .btn h3{
     margin:0;
+}
+
+.btn-holder{
+    display: none;
 }
 
 .planet-info-container{
@@ -196,15 +200,11 @@ body{
     margin:auto;
 }
 
-#planet-img{
-    /* width:100%; */
-}
-
 #internal-display{
     display:none;
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) {
 
     .navbar > .container-fluid{
         display: flex;
@@ -232,6 +232,10 @@ body{
         padding:0 40px;
     }
 
+    .btn-holder{
+        display: block;
+    }
+
     .info{
         text-align: left;
         width:340px;
@@ -243,6 +247,7 @@ body{
         height:40px;
         display:flex;
         align-items: center;
+        justify-content: flex-start;
     }
 
     .btn-holder{
@@ -275,5 +280,41 @@ body{
 
     .stat > h2{
         font-size: 24px;
+    }
+
+    .active{
+        background-color: gray;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .planet-info-container{
+        flex-direction: row;
+    }
+
+    .planet-summary{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        margin:0;
+        padding: 0;
+    }
+
+    .planet-img{
+        width: 40%;
+    }
+
+    .btn-holder{
+        width: 100%;
+    }
+    
+    .info{
+        width: 100%;
+    }
+
+    .navbar > .container-fluid{
+        display: flex;
+        flex-direction: row;
     }
 }
